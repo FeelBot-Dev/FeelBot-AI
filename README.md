@@ -7,11 +7,9 @@ FeelBot is a smart AI chatbot designed to support your mental well-being. It det
 ## 💡 Key Features
 
 - 🧠 Emotion-based responses
-- 🌈 Color-coded chat bubbles
+- 🌈 Color-coded chat
 - ⏳ Typing animation for replies
 - 📊 Mood analytics with pie chart
-- 📅 Mood tracking calendar
-- 🌙 Light/Dark mode toggle
 - 💾 Local chat history storage
 - 🔄 Auto-scroll and smooth transitions
 
