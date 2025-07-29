@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FeelBot - Your AI Buddy</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- 🌊 Breathing Blob Background -->
+  <div class="blob-background">
+    <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(300,300)">
+        <path id="blob-path" d="" fill="#a29bfe">
+          <animate attributeName="d" dur="15s" repeatCount="indefinite"
+            values="
+              M120,-160C160,-120,190,-60,180,0C170,60,130,120,80,160C30,200,-30,220,-90,200C-150,180,-210,120,-220,50C-230,-20,-180,-90,-120,-140C-60,-190,0,-210,60,-200C120,-190,180,-160,120,-160Z;
+              M140,-150C170,-110,180,-40,170,20C160,80,140,140,80,180C20,220,-40,230,-100,210C-160,190,-220,140,-240,70C-260,0,-230,-80,-160,-130C-90,-180,-20,-200,40,-190C100,-180,140,-150,140,-150Z;
+              M120,-160C160,-120,190,-60,180,0C170,60,130,120,80,160C30,200,-30,220,-90,200C-150,180,-210,120,-220,50C-230,-20,-180,-90,-120,-140C-60,-190,0,-210,60,-200C120,-190,180,-160,120,-160Z
+            " />
+        </path>
+      </g>
+    </svg>
+  </div>
+
+  <div class="container">
+    <h1 class="title">FeelBot 🫧</h1>
+
+    <div id="chatbox"></div>
+
+    <div class="input-area">
+      <input id="user-input" type="text" placeholder="Type your message..." />
+      <button id="send-button" onclick="sendMessage()">Send</button>
+      <button id="mood-button">📊 Mood Analytics</button>
+    </div>
+
+    <!-- 📈 Mood Chart Canvas -->
+    <div id="mood-chart-container" style="display:none;">
+      <canvas id="mood-chart" width="400" height="400"></canvas>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
